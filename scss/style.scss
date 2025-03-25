@@ -1,0 +1,29 @@
+// ! Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+// ! Variables
+@import "base/variables";
+
+// ! Blocks
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/about";
+@import "blocks/rooms";
+@import "blocks/entertainments";
+@import "blocks/contacts";
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1090px;
+  margin: 0 auto;
+  position: relative;
+}

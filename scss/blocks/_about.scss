@@ -1,0 +1,60 @@
+#about {
+  background-image: url("../../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px 250px 0px;
+  z-index: 3;
+
+  .about__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-left {
+    width: 70%;
+
+    .about-left__title {
+      color: $text-color;
+      font-size: 40px;
+    }
+    .about-left__subtitle {
+      color: $text-color;
+      font-size: 13px;
+      margin: 40px 0px;
+    }
+    .about-left__btn {
+      background-color: $primary-btn-color;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 24px;
+      cursor: pointer;
+    }
+  }
+  .about-right {
+    width: 30%;
+
+    .about-right__card {
+      background: rgba(190, 191, 195, 0.8);
+      border-radius: 15px;
+      padding: 28px 32px;
+    }
+    .about-right__info {
+      padding: 8px 12px;
+      background-color: $secondary-btn-color;
+      border: none;
+      border-radius: 5px;
+      color: $text-color;
+      margin-top: 20px;
+    }
+    .about-right__title {
+      color: $text-color;
+      font-size: 20px;
+      margin: 12px 0px;
+    }
+    .about-right__subtitle {
+      color: $text-color;
+      font-size: 13px;
+    }
+  }
+}

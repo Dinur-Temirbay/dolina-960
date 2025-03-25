@@ -1,0 +1,35 @@
+#rooms {
+  background: url("../../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px 285px 0px;
+  z-index: 4;
+
+  .rooms-slider {
+    width: 100%;
+
+    .rooms-slider__card {
+      background: rgba(190, 191, 195, 0.8);
+      border-radius: 15px;
+      padding: 28px 32px;
+
+      .rooms-slider__info {
+        padding: 8px 12px;
+        background-color: $secondary-btn-color;
+        border: none;
+        border-radius: 5px;
+        color: $text-color;
+        margin-top: 20px;
+      }
+      .rooms-slider__title {
+        color: $text-color;
+        font-size: 20px;
+        margin: 12px 0px;
+      }
+      .rooms-slider__subtitle {
+        color: $text-color;
+        font-size: 13px;
+      }
+    }
+  }
+}

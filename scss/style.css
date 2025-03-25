@@ -1,1 +1,982 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+header {
+  position: fixed;
+  padding: 20px 0px;
+  width: 100%;
+  z-index: 10;
+}
+header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__logo {
+  display: flex;
+  gap: 20px;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+header nav a {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+header .header__contacts {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 25px;
+}
+header .header__contacts i {
+  cursor: pointer;
+}
+header .header__contacts .header__button {
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#main {
+  background-image: url("../../img/main/main_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0px 100px 0px;
+  z-index: 1;
+}
+#main .main__text {
+  padding: 40px 0px;
+  color: white;
+  line-height: 1.3;
+  font-weight: bolder;
+}
+#main .main__text .main__title {
+  font-size: 54px;
+}
+#main .main__text .main__subtitle {
+  font-size: 54px;
+}
+#main .main__button {
+  background-color: #40303f;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#main .best-offers {
+  padding-top: 100px;
+}
+#main .best-offers .best-offers__title {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+#main .best-offers .best-offers__cards {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .best-offers .best-offers__card {
+  border-radius: 15px;
+  border: none;
+  background: rgba(190, 191, 195, 0.8);
+  padding: 20px 24px;
+  display: flex;
+  gap: 25px;
+}
+#main .best-offers .best-offers__card .best-offers__title {
+  color: white;
+  font-size: 13px;
+}
+#main .best-offers .best-offers__card .best-offers__subtitle {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 12px 0px;
+}
+#main .best-offers .best-offers__card .best-offers__btn {
+  padding: 12px 20px;
+  background-color: #40303f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+#about {
+  background-image: url("../../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px 250px 0px;
+  z-index: 3;
+}
+#about .about__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#about .about-left {
+  width: 70%;
+}
+#about .about-left .about-left__title {
+  color: white;
+  font-size: 40px;
+}
+#about .about-left .about-left__subtitle {
+  color: white;
+  font-size: 13px;
+  margin: 40px 0px;
+}
+#about .about-left .about-left__btn {
+  background-color: #f2f2f2;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+#about .about-right {
+  width: 30%;
+}
+#about .about-right .about-right__card {
+  background: rgba(190, 191, 195, 0.8);
+  border-radius: 15px;
+  padding: 28px 32px;
+}
+#about .about-right .about-right__info {
+  padding: 8px 12px;
+  background-color: #40303f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+#about .about-right .about-right__title {
+  color: white;
+  font-size: 20px;
+  margin: 12px 0px;
+}
+#about .about-right .about-right__subtitle {
+  color: white;
+  font-size: 13px;
+}
+
+#rooms {
+  background: url("../../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px 285px 0px;
+  z-index: 4;
+}
+#rooms .rooms-slider {
+  width: 100%;
+}
+#rooms .rooms-slider .rooms-slider__card {
+  background: rgba(190, 191, 195, 0.8);
+  border-radius: 15px;
+  padding: 28px 32px;
+}
+#rooms .rooms-slider .rooms-slider__card .rooms-slider__info {
+  padding: 8px 12px;
+  background-color: #40303f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+#rooms .rooms-slider .rooms-slider__card .rooms-slider__title {
+  color: white;
+  font-size: 20px;
+  margin: 12px 0px;
+}
+#rooms .rooms-slider .rooms-slider__card .rooms-slider__subtitle {
+  color: white;
+  font-size: 13px;
+}
+
+#entertainments1,
+#entertainments2,
+#entertainments3,
+#entertainments4 {
+  background: url("../../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0px;
+  z-index: 1;
+}
+#entertainments1 .entertainments1-left__title,
+#entertainments1 .entertainments2-left__title,
+#entertainments1 .entertainments3-left__title,
+#entertainments1 .entertainments4-left__title,
+#entertainments2 .entertainments1-left__title,
+#entertainments2 .entertainments2-left__title,
+#entertainments2 .entertainments3-left__title,
+#entertainments2 .entertainments4-left__title,
+#entertainments3 .entertainments1-left__title,
+#entertainments3 .entertainments2-left__title,
+#entertainments3 .entertainments3-left__title,
+#entertainments3 .entertainments4-left__title,
+#entertainments4 .entertainments1-left__title,
+#entertainments4 .entertainments2-left__title,
+#entertainments4 .entertainments3-left__title,
+#entertainments4 .entertainments4-left__title {
+  color: white;
+  font-size: 40px;
+}
+#entertainments1 .entertainments1__wrapper,
+#entertainments1 .entertainments2__wrapper,
+#entertainments1 .entertainments3__wrapper,
+#entertainments1 .entertainments4__wrapper,
+#entertainments2 .entertainments1__wrapper,
+#entertainments2 .entertainments2__wrapper,
+#entertainments2 .entertainments3__wrapper,
+#entertainments2 .entertainments4__wrapper,
+#entertainments3 .entertainments1__wrapper,
+#entertainments3 .entertainments2__wrapper,
+#entertainments3 .entertainments3__wrapper,
+#entertainments3 .entertainments4__wrapper,
+#entertainments4 .entertainments1__wrapper,
+#entertainments4 .entertainments2__wrapper,
+#entertainments4 .entertainments3__wrapper,
+#entertainments4 .entertainments4__wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-left,
+#entertainments1 .entertainments1__wrapper .entertainments2-left,
+#entertainments1 .entertainments1__wrapper .entertainments3-left,
+#entertainments1 .entertainments1__wrapper .entertainments4-left,
+#entertainments1 .entertainments2__wrapper .entertainments1-left,
+#entertainments1 .entertainments2__wrapper .entertainments2-left,
+#entertainments1 .entertainments2__wrapper .entertainments3-left,
+#entertainments1 .entertainments2__wrapper .entertainments4-left,
+#entertainments1 .entertainments3__wrapper .entertainments1-left,
+#entertainments1 .entertainments3__wrapper .entertainments2-left,
+#entertainments1 .entertainments3__wrapper .entertainments3-left,
+#entertainments1 .entertainments3__wrapper .entertainments4-left,
+#entertainments1 .entertainments4__wrapper .entertainments1-left,
+#entertainments1 .entertainments4__wrapper .entertainments2-left,
+#entertainments1 .entertainments4__wrapper .entertainments3-left,
+#entertainments1 .entertainments4__wrapper .entertainments4-left,
+#entertainments2 .entertainments1__wrapper .entertainments1-left,
+#entertainments2 .entertainments1__wrapper .entertainments2-left,
+#entertainments2 .entertainments1__wrapper .entertainments3-left,
+#entertainments2 .entertainments1__wrapper .entertainments4-left,
+#entertainments2 .entertainments2__wrapper .entertainments1-left,
+#entertainments2 .entertainments2__wrapper .entertainments2-left,
+#entertainments2 .entertainments2__wrapper .entertainments3-left,
+#entertainments2 .entertainments2__wrapper .entertainments4-left,
+#entertainments2 .entertainments3__wrapper .entertainments1-left,
+#entertainments2 .entertainments3__wrapper .entertainments2-left,
+#entertainments2 .entertainments3__wrapper .entertainments3-left,
+#entertainments2 .entertainments3__wrapper .entertainments4-left,
+#entertainments2 .entertainments4__wrapper .entertainments1-left,
+#entertainments2 .entertainments4__wrapper .entertainments2-left,
+#entertainments2 .entertainments4__wrapper .entertainments3-left,
+#entertainments2 .entertainments4__wrapper .entertainments4-left,
+#entertainments3 .entertainments1__wrapper .entertainments1-left,
+#entertainments3 .entertainments1__wrapper .entertainments2-left,
+#entertainments3 .entertainments1__wrapper .entertainments3-left,
+#entertainments3 .entertainments1__wrapper .entertainments4-left,
+#entertainments3 .entertainments2__wrapper .entertainments1-left,
+#entertainments3 .entertainments2__wrapper .entertainments2-left,
+#entertainments3 .entertainments2__wrapper .entertainments3-left,
+#entertainments3 .entertainments2__wrapper .entertainments4-left,
+#entertainments3 .entertainments3__wrapper .entertainments1-left,
+#entertainments3 .entertainments3__wrapper .entertainments2-left,
+#entertainments3 .entertainments3__wrapper .entertainments3-left,
+#entertainments3 .entertainments3__wrapper .entertainments4-left,
+#entertainments3 .entertainments4__wrapper .entertainments1-left,
+#entertainments3 .entertainments4__wrapper .entertainments2-left,
+#entertainments3 .entertainments4__wrapper .entertainments3-left,
+#entertainments3 .entertainments4__wrapper .entertainments4-left,
+#entertainments4 .entertainments1__wrapper .entertainments1-left,
+#entertainments4 .entertainments1__wrapper .entertainments2-left,
+#entertainments4 .entertainments1__wrapper .entertainments3-left,
+#entertainments4 .entertainments1__wrapper .entertainments4-left,
+#entertainments4 .entertainments2__wrapper .entertainments1-left,
+#entertainments4 .entertainments2__wrapper .entertainments2-left,
+#entertainments4 .entertainments2__wrapper .entertainments3-left,
+#entertainments4 .entertainments2__wrapper .entertainments4-left,
+#entertainments4 .entertainments3__wrapper .entertainments1-left,
+#entertainments4 .entertainments3__wrapper .entertainments2-left,
+#entertainments4 .entertainments3__wrapper .entertainments3-left,
+#entertainments4 .entertainments3__wrapper .entertainments4-left,
+#entertainments4 .entertainments4__wrapper .entertainments1-left,
+#entertainments4 .entertainments4__wrapper .entertainments2-left,
+#entertainments4 .entertainments4__wrapper .entertainments3-left,
+#entertainments4 .entertainments4__wrapper .entertainments4-left {
+  width: 75%;
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments4-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments1-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments4-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments1-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments4-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments1-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments4-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments1-left__title2,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments4-left__title2 {
+  color: white;
+  font-size: 20px;
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments4-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments1-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments2-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments3-left__subtitle,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments4-left__subtitle {
+  color: white;
+  font-size: 13px;
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list {
+  color: white;
+  margin-left: 20px;
+  list-style: url("../../img/entertainments3/entertainment3__triangle.svg");
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments1 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments1 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments1 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments1 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments1 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments1 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments1 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments1 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments1 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments1 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments1 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments1 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments1 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments1 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments1 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments2 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments2 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments2 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments2 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments2 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments2 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments2 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments2 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments2 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments2 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments2 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments2 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments2 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments2 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments2 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments2 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments3 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments3 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments3 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments3 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments3 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments3 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments3 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments3 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments3 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments3 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments3 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments3 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments3 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments3 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments3 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments3 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments4 .entertainments1__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments4 .entertainments1__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments4 .entertainments1__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments4 .entertainments1__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments4 .entertainments2__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments4 .entertainments2__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments4 .entertainments2__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments4 .entertainments2__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments4 .entertainments3__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments4 .entertainments3__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments4 .entertainments3__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments4 .entertainments3__wrapper .entertainments4-left .entertainments3-left__list li,
+#entertainments4 .entertainments4__wrapper .entertainments1-left .entertainments3-left__list li,
+#entertainments4 .entertainments4__wrapper .entertainments2-left .entertainments3-left__list li,
+#entertainments4 .entertainments4__wrapper .entertainments3-left .entertainments3-left__list li,
+#entertainments4 .entertainments4__wrapper .entertainments4-left .entertainments3-left__list li {
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+#entertainments1 .entertainments1__wrapper .entertainments1-right,
+#entertainments1 .entertainments1__wrapper .entertainments2-right,
+#entertainments1 .entertainments1__wrapper .entertainments3-right,
+#entertainments1 .entertainments1__wrapper .entertainments4-right,
+#entertainments1 .entertainments2__wrapper .entertainments1-right,
+#entertainments1 .entertainments2__wrapper .entertainments2-right,
+#entertainments1 .entertainments2__wrapper .entertainments3-right,
+#entertainments1 .entertainments2__wrapper .entertainments4-right,
+#entertainments1 .entertainments3__wrapper .entertainments1-right,
+#entertainments1 .entertainments3__wrapper .entertainments2-right,
+#entertainments1 .entertainments3__wrapper .entertainments3-right,
+#entertainments1 .entertainments3__wrapper .entertainments4-right,
+#entertainments1 .entertainments4__wrapper .entertainments1-right,
+#entertainments1 .entertainments4__wrapper .entertainments2-right,
+#entertainments1 .entertainments4__wrapper .entertainments3-right,
+#entertainments1 .entertainments4__wrapper .entertainments4-right,
+#entertainments2 .entertainments1__wrapper .entertainments1-right,
+#entertainments2 .entertainments1__wrapper .entertainments2-right,
+#entertainments2 .entertainments1__wrapper .entertainments3-right,
+#entertainments2 .entertainments1__wrapper .entertainments4-right,
+#entertainments2 .entertainments2__wrapper .entertainments1-right,
+#entertainments2 .entertainments2__wrapper .entertainments2-right,
+#entertainments2 .entertainments2__wrapper .entertainments3-right,
+#entertainments2 .entertainments2__wrapper .entertainments4-right,
+#entertainments2 .entertainments3__wrapper .entertainments1-right,
+#entertainments2 .entertainments3__wrapper .entertainments2-right,
+#entertainments2 .entertainments3__wrapper .entertainments3-right,
+#entertainments2 .entertainments3__wrapper .entertainments4-right,
+#entertainments2 .entertainments4__wrapper .entertainments1-right,
+#entertainments2 .entertainments4__wrapper .entertainments2-right,
+#entertainments2 .entertainments4__wrapper .entertainments3-right,
+#entertainments2 .entertainments4__wrapper .entertainments4-right,
+#entertainments3 .entertainments1__wrapper .entertainments1-right,
+#entertainments3 .entertainments1__wrapper .entertainments2-right,
+#entertainments3 .entertainments1__wrapper .entertainments3-right,
+#entertainments3 .entertainments1__wrapper .entertainments4-right,
+#entertainments3 .entertainments2__wrapper .entertainments1-right,
+#entertainments3 .entertainments2__wrapper .entertainments2-right,
+#entertainments3 .entertainments2__wrapper .entertainments3-right,
+#entertainments3 .entertainments2__wrapper .entertainments4-right,
+#entertainments3 .entertainments3__wrapper .entertainments1-right,
+#entertainments3 .entertainments3__wrapper .entertainments2-right,
+#entertainments3 .entertainments3__wrapper .entertainments3-right,
+#entertainments3 .entertainments3__wrapper .entertainments4-right,
+#entertainments3 .entertainments4__wrapper .entertainments1-right,
+#entertainments3 .entertainments4__wrapper .entertainments2-right,
+#entertainments3 .entertainments4__wrapper .entertainments3-right,
+#entertainments3 .entertainments4__wrapper .entertainments4-right,
+#entertainments4 .entertainments1__wrapper .entertainments1-right,
+#entertainments4 .entertainments1__wrapper .entertainments2-right,
+#entertainments4 .entertainments1__wrapper .entertainments3-right,
+#entertainments4 .entertainments1__wrapper .entertainments4-right,
+#entertainments4 .entertainments2__wrapper .entertainments1-right,
+#entertainments4 .entertainments2__wrapper .entertainments2-right,
+#entertainments4 .entertainments2__wrapper .entertainments3-right,
+#entertainments4 .entertainments2__wrapper .entertainments4-right,
+#entertainments4 .entertainments3__wrapper .entertainments1-right,
+#entertainments4 .entertainments3__wrapper .entertainments2-right,
+#entertainments4 .entertainments3__wrapper .entertainments3-right,
+#entertainments4 .entertainments3__wrapper .entertainments4-right,
+#entertainments4 .entertainments4__wrapper .entertainments1-right,
+#entertainments4 .entertainments4__wrapper .entertainments2-right,
+#entertainments4 .entertainments4__wrapper .entertainments3-right,
+#entertainments4 .entertainments4__wrapper .entertainments4-right {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#contacts {
+  background: url("../../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0px;
+  z-index: 1;
+}
+#contacts .contacts-left__title {
+  color: white;
+  font-size: 40px;
+}
+#contacts .contacts__wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+#contacts .contacts__wrapper .contacts-left {
+  width: 75%;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left-social {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left-social i {
+  cursor: pointer;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left-social .contacts-left-social__text {
+  padding-left: 1em;
+  color: white;
+  font-size: 13px;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left__subtitle {
+  color: white;
+  font-size: 13px;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left__title2 {
+  color: white;
+  font-size: 20px;
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left__list {
+  color: white;
+  margin-left: 20px;
+  list-style: url("../../img/entertainments3/entertainment3__triangle.svg");
+}
+#contacts .contacts__wrapper .contacts-left .contacts-left__list li {
+  font-size: 13px;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1090px;
+  margin: 0 auto;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

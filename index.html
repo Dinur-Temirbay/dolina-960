@@ -3,7 +3,507 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Отель Долина 960</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="./img/header/header_logo1.svg" alt="header_logo1" />
+            <img src="./img/header/header_logo2.svg" alt="header_logo2" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#rooms">Номера</a></li>
+              <li><a href="#entertainments1">Развлечения</a></li>
+              <li><a href="#">Трансфер</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <i class="fa-brands fa-vk fa-2x"></i>
+            <i class="fa-brands fa-telegram fa-2x"></i>
+            <button class="header__button">Групповые заезды</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <img src="./img/main/main_stars.svg" alt="stars" />
+        <div class="main__text">
+          <h1 class="main__title">Отель</h1>
+          <p class="main__subtitle">«Долина 960»</p>
+        </div>
+        <button class="main__button">Быстрое бронирование</button>
+        <div class="best-offers">
+          <h2 class="best-offers__title">Лучшие предложения</h2>
+          <div class="best-offers__cards">
+            <div class="best-offers__card">
+              <img
+                src="./img/main/main_card_img1.png"
+                alt="main_card_img1"
+                width="128px"
+              />
+              <div>
+                <span class="best-offers__title">Премиум Кинг</span>
+                <p class="best-offers__subtitle">₽ 4 000</p>
+                <button class="best-offers__btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="best-offers__card">
+              <img
+                src="./img/main/main_card_img2.png"
+                alt="main_card_img2"
+                width="128px"
+              />
+              <div>
+                <span class="best-offers__title">Эксклюзивный Кинг</span>
+                <p class="best-offers__subtitle">₽ 5000</p>
+                <button class="best-offers__btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="best-offers__card">
+              <img
+                src="./img/main/main_card_img3.png"
+                alt="main_card_img3"
+                width="128px"
+              />
+              <div>
+                <span class="best-offers__title">Star Кинг</span>
+                <p class="best-offers__subtitle">₽ 8 000</p>
+                <button class="best-offers__btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about-left">
+            <h2 class="about-left__title">
+              Добро пожаловать в отель
+              <br />
+              «Долина 960»
+            </h2>
+            <p class="about-left__subtitle">
+              Бутик-отель расположен на Поляне 960, верхнем уровне Курорта
+              Красная Поляна. Небольшой номерной фонд в 48 просторных номеров
+              создает ощущение уединенности и в то же время отвечает запросам
+              молодежной аудитории, которая ценит стиль и активный отдых.
+              <br />
+              <br />
+              Ресторан отеля подает завтраки по системе «шведский стол» и
+              примечателен интерьерным решением в стиле поп-арт. Рестобар
+              Liechtenstein временно не работает, в отеле работает только Room
+              Service.
+              <br />
+              <br />
+              Cпа-комплекс отеля предлагает гостям посетить открытый
+              подогреваемым инфинити-бассейн с панорамным видом на горы, крытый
+              бассейн. Также в спа-центре отеля Долина 960, представлена
+              термальная зона с финской сауной, паровой комнатой и турецким
+              хаммамом, крытым бассейном с шезлонгами для отдыха.
+            </p>
+            <button class="about-left__btn">Быстрое бронирование</button>
+          </div>
+          <div class="about-right">
+            <div class="about-right__card">
+              <img
+                src="./img/about/about_card_img.svg"
+                alt="about_card_img"
+                width="250px"
+              />
+              <button class="about-right__info">Ресторан и бар</button>
+              <p class="about-right__title">«Liechtenstein»</p>
+              <p class="about-right__subtitle">
+                В ресторане и баре «Liechtenstein» используется авторский подход
+                к приготовлению международных блюд. В заведении представлены
+                блюда европейской, японской и итальянской кухонь. В баре имеется
+                большой выбор терпких напитков и коктейлей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms">
+      <div class="swiper rooms-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img1.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img2.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img3.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img3.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img3.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="rooms-slider__card">
+              <img
+                src="img/rooms/rooms__card_img3.svg"
+                alt="Премиум Кинг"
+                width="100%"
+              />
+              <button class="rooms-slider__info">от 4 000 руб.</button>
+              <p class="rooms-slider__title">Премиум Кинг</p>
+              <p class="rooms-slider__subtitle">
+                В номере: большая двуспальная кровать, рабочее место, кресло,
+                встроенный шкаф, LCD телевизор, Wi-Fi, кондиционер, сейф,
+                чайно-кофейная станция.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="entertainments1">
+      <div class="container">
+        <h2 class="entertainments1-left__title">Рестораны и бары</h2>
+        <div class="entertainments1__wrapper">
+          <div class="entertainments1-left">
+            <p class="entertainments1-left__subtitle">
+              На территории отеля работает рестобар «Liechtenstein», примыкающая
+              к нему банкетная терраса и яркий оригинальный лобби-бар.
+            </p>
+            <br />
+            <h3 class="entertainments1-left__title2">
+              Ресторан и бар «Liechtenstein»
+            </h3>
+            <br />
+            <p class="entertainments1-left__subtitle">
+              Роскошный стиль поп-арт, репродукции картин Роя Лихтенштейна,
+              живописные панорамные виды Кавказских гор в сочетании с высоким
+              сервисом и авторским подходом к приготовлению блюд разных кухонь
+              мира подарят незабываемые впечатления от гастрономического отдыха.
+            </p>
+            <br />
+            <h3 class="entertainments1-left__title2">Room Service</h3>
+            <br />
+            <p class="entertainments1-left__subtitle">
+              Рестобар Liechtenstein временно не работает, в отеле работает
+              только Room Service. В отеле работает служба доставки еды и
+              напитков в номер с 11:00 до 22:30, бар открыт с 11:00 до 23:00.
+            </p>
+          </div>
+          <div class="entertainments1-right">
+            <img
+              src="./img/entertainments1/entertainments1__img1.svg"
+              alt="entertainments1__img1"
+            />
+            <img
+              src="./img/entertainments1/entertainments1__img2.svg"
+              alt="entertainments1__img2"
+            />
+            <img
+              src="./img/entertainments1/entertainments1__img3.svg"
+              alt="entertainments1__img3"
+            />
+            <img
+              src="./img/entertainments1/entertainments1__img4.svg"
+              alt="entertainments1__img4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="entertainments2">
+      <div class="container">
+        <h2 class="entertainments2-left__title">Пляж</h2>
+        <div class="entertainments2__wrapper">
+          <div class="entertainments2-left">
+            <p class="entertainments2-left__subtitle">
+              Каждый день на побережье Черного моря от горного курорта курсирует
+              бесплатный трансфер к самым ближайшим пляжам в Имеретинской
+              низменности. Записаться на нужное время нужно заранее на стойке
+              ресепшен. Просторный пляж для гостей курорта расположен вблизи
+              Олимпийского парка и крупнейшего в России тематического парка
+              развлечений Сочи Парк. На территории пляжа есть вся необходимая
+              инфраструктура для отдыха на побережье: шезлонги и зонтики, зона
+              аэрария, прокат SUP-бордов. Множество кафе на выбор всего в
+              нескольких шагах.
+            </p>
+          </div>
+          <div class="entertainments2-right">
+            <img
+              src="./img/entertainments2/entertainments2__img1.svg"
+              alt="entertainments2__img1"
+            />
+            <img
+              src="./img/entertainments2/entertainments2__img2.svg"
+              alt="entertainments2__img2"
+            />
+            <img
+              src="./img/entertainments2/entertainments2__img3.svg"
+              alt="entertainments2__img3"
+            />
+            <img
+              src="./img/entertainments2/entertainments2__img4.svg"
+              alt="entertainments2__img4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="entertainments3">
+      <div class="container">
+        <h2 class="entertainments3-left__title">SPA-комплекс</h2>
+        <div class="entertainments3__wrapper">
+          <div class="entertainments3-left">
+            <p class="entertainments3-left__subtitle">
+              Преимуществом отеля в горах является его крытый бассейн и банный
+              комплекс.
+            </p>
+            <br />
+            <ul class="entertainments3-left__list">
+              <li>Крытый бассейн</li>
+              <li>Хаммам</li>
+              <li>Сауна</li>
+              <li>Массажи</li>
+              <li>Парная</li>
+              <li>Инфинити-бассейн</li>
+            </ul>
+          </div>
+          <div class="entertainments3-right">
+            <img
+              src="./img/entertainments3/entertainments3__img1.svg"
+              alt="entertainments3__img1"
+            />
+            <img
+              src="./img/entertainments2/entertainments2__img2.svg"
+              alt="entertainments3__img2"
+            />
+            <img
+              src="./img/entertainments3/entertainments3__img3.svg"
+              alt="entertainments3__img3"
+            />
+            <img
+              src="./img/entertainments3/entertainments3__img4.svg"
+              alt="entertainments3__img4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="entertainments4">
+      <div class="container">
+        <h2 class="entertainments4-left__title">Развлечения и спорт</h2>
+        <div class="entertainments4__wrapper">
+          <div class="entertainments4-left">
+            <p class="entertainments4-left__subtitle">
+              В центре курорта Красная Поляна, где находится отель, имеется
+              аквапарк, торговые и развлекательные центры, салоны красоты и
+              другие объекты курортной инфраструктуры
+            </p>
+            <br />
+            <h3 class="entertainments4-left__title2">Спортивный зал</h3>
+            <br />
+            <p class="entertainments4-left__subtitle">
+              Спортивный зал отеля оснащен современными тренажерами для
+              кардиотренировок, силовых нагрузок, ковриками для занятий йогой.
+              Из панорамных окон открывается красивый вид.
+            </p>
+            <br />
+            <h3 class="entertainments4-left__title2">Прокат</h3>
+            <br />
+            <p class="entertainments4-left__subtitle">
+              В службе проката можно арендовать горный или городской велосипед,
+              сигвеи и самокаты, квадроциклы и электромопеды. Прогулки на них
+              доставят вам большое удовольствие, прокат предоставляет в
+              пользование только новые, проверенные модели.
+            </p>
+            <br />
+            <h3 class="entertainments4-left__title2">Горнолыжные трассы</h3>
+            <br />
+            <p class="entertainments4-left__subtitle">
+              Горнолыжные трассы курорта Красная Поляна имеют различный уровень
+              сложности, благодаря чему туристы могут выбрать трассу, которая
+              соответствует их уровню подготовки. Новички могут воспользоваться
+              курсом по обучению горнолыжному спорту.
+            </p>
+          </div>
+          <div class="entertainments4-right">
+            <img
+              src="./img/entertainments4/entertainments4__img1.svg"
+              alt="entertainments4__img1"
+            />
+            <img
+              src="./img/entertainments4/entertainments4__img2.svg"
+              alt="entertainments4__img2"
+            />
+            <img
+              src="./img/entertainments4/entertainments4__img3.svg"
+              alt="entertainments4__img3"
+            />
+            <img
+              src="./img/entertainments4/entertainments4__img4.svg"
+              alt="entertainments4__img4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container">
+        <h2 class="contacts-left__title">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts-left">
+            <div class="contacts-left-social">
+              <i class="fa-brands fa-telegram fa-2x"></i>
+              <p class="contacts-left-social__text">
+                Telegram канал «Лучшие горнолыжные курорты России»
+              </p>
+            </div>
+            <br />
+            <h3 class="contacts-left__title2">Свяжитесь с нами:</h3>
+            <br />
+            <ul class="contacts-left__list">
+              <li>8 (861) 205-07-32 (бронирование в Москве)</li>
+              <li>8 (499) 322-14-78 (корпоративный отдел)</li>
+            </ul>
+            <br />
+            <h3 class="contacts-left__title2">Адрес туристической компании:</h3>
+            <br />
+            <ul class="contacts-left__list">
+              <li>
+                г. Москва, ул. Бауманская, д.6, стр.2, Бизнес-центр Виктория
+                Плаза, 8 этаж, 804 офис.
+              </li>
+            </ul>
+            <br />
+            <h3 class="contacts-left__title2">Адрес:</h3>
+            <br />
+            <ul class="contacts-left__list">
+              <li>
+                Россия, г. Сочи, Курорт Красная Поляна 960, ул. Горная, д. 2.
+              </li>
+            </ul>
+            <br />
+            <p class="contacts-left__subtitle">
+              *Обращаем Ваше внимание на то, что данный Интернет-сайт носит
+              исключительно информационный характер и ни при каких условиях
+              результаты расчетов не являются публичной офертой, определяемой
+              положениями Статьи 437 Гражданского кодекса Российской Федерации.
+              За окончательным расчетом обращайтесь к нашим менеджерам. Данный
+              ресурс не является официальным сайтом отеля.
+            </p>
+          </div>
+          <div class="contacts-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11542.656786105346!2d40.250582759083485!3d43.67595325711298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f6759afd7c76c5%3A0x15671ff4fa17d7f!2z0JTQvtC70LjQvdCwIDk2MA!5e0!3m2!1sru!2skz!4v1742915641402!5m2!1sru!2skz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/swiper-setting.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
 </html>
