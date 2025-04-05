@@ -3,7 +3,7 @@ header {
   position: fixed;
   padding: 20px 0px;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
 }
 header .header__inner {
   display: flex;
@@ -35,6 +35,10 @@ header .header__contacts {
 header .header__contacts i {
   cursor: pointer;
 }
+header .header__contacts i:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
 header .header__contacts .header__button {
   background-color: #f2f2f2;
   color: black;
@@ -44,13 +48,16 @@ header .header__contacts .header__button {
   border: none;
   cursor: pointer;
 }
+header .header__contacts .header__button:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
 
 #main {
   background-image: url("../../img/main/main_bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 200px 0px 100px 0px;
-  z-index: 1;
 }
 #main .main__text {
   padding: 40px 0px;
@@ -71,6 +78,10 @@ header .header__contacts .header__button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+#main .main__button:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
 }
 #main .best-offers {
   padding-top: 100px;
@@ -93,6 +104,10 @@ header .header__contacts .header__button {
   display: flex;
   gap: 25px;
 }
+#main .best-offers .best-offers__card:hover {
+  scale: 1.01;
+  transition: all 0.3s ease-in-out;
+}
 #main .best-offers .best-offers__card .best-offers__title {
   color: white;
   font-size: 13px;
@@ -110,6 +125,11 @@ header .header__contacts .header__button {
   border: none;
   border-radius: 10px;
   font-size: 12px;
+  cursor: pointer;
+}
+#main .best-offers .best-offers__card .best-offers__btn:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
 }
 
 #about {
@@ -117,7 +137,6 @@ header .header__contacts .header__button {
   background-size: cover;
   background-position: center;
   padding: 200px 0px 250px 0px;
-  z-index: 3;
 }
 #about .about__wrapper {
   display: flex;
@@ -144,6 +163,10 @@ header .header__contacts .header__button {
   padding: 14px 24px;
   cursor: pointer;
 }
+#about .about-left .about-left__btn:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
 #about .about-right {
   width: 30%;
 }
@@ -151,6 +174,10 @@ header .header__contacts .header__button {
   background: rgba(190, 191, 195, 0.8);
   border-radius: 15px;
   padding: 28px 32px;
+}
+#about .about-right .about-right__card:hover {
+  scale: 1.01;
+  transition: all 0.3s ease-in-out;
 }
 #about .about-right .about-right__info {
   padding: 8px 12px;
@@ -175,7 +202,7 @@ header .header__contacts .header__button {
   background-size: cover;
   background-position: center;
   padding: 200px 0px 285px 0px;
-  z-index: 4;
+  z-index: 1;
 }
 #rooms .rooms-slider {
   width: 100%;
@@ -184,6 +211,10 @@ header .header__contacts .header__button {
   background: rgba(190, 191, 195, 0.8);
   border-radius: 15px;
   padding: 28px 32px;
+}
+#rooms .rooms-slider .rooms-slider__card:hover {
+  scale: 1.01;
+  transition: all 0.3s ease-in-out;
 }
 #rooms .rooms-slider .rooms-slider__card .rooms-slider__info {
   padding: 8px 12px;
@@ -211,7 +242,6 @@ header .header__contacts .header__button {
   background-position: center;
   background-size: cover;
   padding: 200px 0px;
-  z-index: 1;
 }
 #entertainments1 .entertainments1-left__title,
 #entertainments1 .entertainments2-left__title,
@@ -912,13 +942,78 @@ header .header__contacts .header__button {
   flex-wrap: wrap;
   gap: 15px;
 }
+#entertainments1 .entertainments1__wrapper .entertainments1-right img,
+#entertainments1 .entertainments1__wrapper .entertainments2-right img,
+#entertainments1 .entertainments1__wrapper .entertainments3-right img,
+#entertainments1 .entertainments1__wrapper .entertainments4-right img,
+#entertainments1 .entertainments2__wrapper .entertainments1-right img,
+#entertainments1 .entertainments2__wrapper .entertainments2-right img,
+#entertainments1 .entertainments2__wrapper .entertainments3-right img,
+#entertainments1 .entertainments2__wrapper .entertainments4-right img,
+#entertainments1 .entertainments3__wrapper .entertainments1-right img,
+#entertainments1 .entertainments3__wrapper .entertainments2-right img,
+#entertainments1 .entertainments3__wrapper .entertainments3-right img,
+#entertainments1 .entertainments3__wrapper .entertainments4-right img,
+#entertainments1 .entertainments4__wrapper .entertainments1-right img,
+#entertainments1 .entertainments4__wrapper .entertainments2-right img,
+#entertainments1 .entertainments4__wrapper .entertainments3-right img,
+#entertainments1 .entertainments4__wrapper .entertainments4-right img,
+#entertainments2 .entertainments1__wrapper .entertainments1-right img,
+#entertainments2 .entertainments1__wrapper .entertainments2-right img,
+#entertainments2 .entertainments1__wrapper .entertainments3-right img,
+#entertainments2 .entertainments1__wrapper .entertainments4-right img,
+#entertainments2 .entertainments2__wrapper .entertainments1-right img,
+#entertainments2 .entertainments2__wrapper .entertainments2-right img,
+#entertainments2 .entertainments2__wrapper .entertainments3-right img,
+#entertainments2 .entertainments2__wrapper .entertainments4-right img,
+#entertainments2 .entertainments3__wrapper .entertainments1-right img,
+#entertainments2 .entertainments3__wrapper .entertainments2-right img,
+#entertainments2 .entertainments3__wrapper .entertainments3-right img,
+#entertainments2 .entertainments3__wrapper .entertainments4-right img,
+#entertainments2 .entertainments4__wrapper .entertainments1-right img,
+#entertainments2 .entertainments4__wrapper .entertainments2-right img,
+#entertainments2 .entertainments4__wrapper .entertainments3-right img,
+#entertainments2 .entertainments4__wrapper .entertainments4-right img,
+#entertainments3 .entertainments1__wrapper .entertainments1-right img,
+#entertainments3 .entertainments1__wrapper .entertainments2-right img,
+#entertainments3 .entertainments1__wrapper .entertainments3-right img,
+#entertainments3 .entertainments1__wrapper .entertainments4-right img,
+#entertainments3 .entertainments2__wrapper .entertainments1-right img,
+#entertainments3 .entertainments2__wrapper .entertainments2-right img,
+#entertainments3 .entertainments2__wrapper .entertainments3-right img,
+#entertainments3 .entertainments2__wrapper .entertainments4-right img,
+#entertainments3 .entertainments3__wrapper .entertainments1-right img,
+#entertainments3 .entertainments3__wrapper .entertainments2-right img,
+#entertainments3 .entertainments3__wrapper .entertainments3-right img,
+#entertainments3 .entertainments3__wrapper .entertainments4-right img,
+#entertainments3 .entertainments4__wrapper .entertainments1-right img,
+#entertainments3 .entertainments4__wrapper .entertainments2-right img,
+#entertainments3 .entertainments4__wrapper .entertainments3-right img,
+#entertainments3 .entertainments4__wrapper .entertainments4-right img,
+#entertainments4 .entertainments1__wrapper .entertainments1-right img,
+#entertainments4 .entertainments1__wrapper .entertainments2-right img,
+#entertainments4 .entertainments1__wrapper .entertainments3-right img,
+#entertainments4 .entertainments1__wrapper .entertainments4-right img,
+#entertainments4 .entertainments2__wrapper .entertainments1-right img,
+#entertainments4 .entertainments2__wrapper .entertainments2-right img,
+#entertainments4 .entertainments2__wrapper .entertainments3-right img,
+#entertainments4 .entertainments2__wrapper .entertainments4-right img,
+#entertainments4 .entertainments3__wrapper .entertainments1-right img,
+#entertainments4 .entertainments3__wrapper .entertainments2-right img,
+#entertainments4 .entertainments3__wrapper .entertainments3-right img,
+#entertainments4 .entertainments3__wrapper .entertainments4-right img,
+#entertainments4 .entertainments4__wrapper .entertainments1-right img,
+#entertainments4 .entertainments4__wrapper .entertainments2-right img,
+#entertainments4 .entertainments4__wrapper .entertainments3-right img,
+#entertainments4 .entertainments4__wrapper .entertainments4-right img {
+  border-radius: 5px;
+}
 
 #contacts {
   background: url("../../img/bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 200px 0px;
-  z-index: 1;
 }
 #contacts .contacts-left__title {
   color: white;

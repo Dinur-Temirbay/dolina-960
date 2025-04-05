@@ -3,7 +3,6 @@
   background-size: cover;
   background-position: center;
   padding: 200px 0px 250px 0px;
-  z-index: 3;
 
   .about__wrapper {
     display: flex;
@@ -29,6 +28,10 @@
       border-radius: 10px;
       padding: 14px 24px;
       cursor: pointer;
+      &:hover {
+        scale: 1.05;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
   .about-right {
@@ -38,6 +41,10 @@
       background: rgba(190, 191, 195, 0.8);
       border-radius: 15px;
       padding: 28px 32px;
+      &:hover {
+        scale: 1.01;
+        transition: all 0.3s ease-in-out;
+      }
     }
     .about-right__info {
       padding: 8px 12px;

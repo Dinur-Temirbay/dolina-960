@@ -6,7 +6,6 @@
   background-position: center;
   background-size: cover;
   padding: 200px 0px;
-  z-index: 1;
 
   .entertainments1-left__title,
   .entertainments2-left__title,
@@ -63,6 +62,9 @@
       align-items: start;
       flex-wrap: wrap;
       gap: 15px;
+      img {
+        border-radius: 5px;
+      }
     }
   }
 }

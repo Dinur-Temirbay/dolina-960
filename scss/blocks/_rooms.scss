@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   padding: 200px 0px 285px 0px;
-  z-index: 4;
+  z-index: 1;
 
   .rooms-slider {
     width: 100%;
@@ -12,6 +12,10 @@
       background: rgba(190, 191, 195, 0.8);
       border-radius: 15px;
       padding: 28px 32px;
+      &:hover {
+        scale: 1.01;
+        transition: all 0.3s ease-in-out;
+      }
 
       .rooms-slider__info {
         padding: 8px 12px;
